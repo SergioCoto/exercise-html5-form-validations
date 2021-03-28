@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row m-4">
+            <div class="col-11 bg-light m-auto border rounded-top" id="sendDiv">
+                <h2>Payment form example</h2>
+            </div>
+            <div class="col-11 m-auto border-right border-left" id="formulario">
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-5 mb-3" id="cardDiv">
+                            <label for="card1">Card #</label>
+                            <input type="text" class="form-control" id="card1" placeholder="XXXXXXXXXXXXXXXX"
+                                value="" required>
+                        </div>
+                        <div class="col-md-3 mb-3" id="cvcDiv">
+                            <label for="cvc1">CVC #</label>
+                            <input type="text" class="form-control" id="cvc1" placeholder="0000"
+                                value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3" id="amountDiv">
+                            <label for="amount1">Amount</label>
+                            <input type="text" class="form-control" id="amount1" placeholder="Amount"
+                                value="" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3" id="nameDiv"> 
+                            <label for="name1">First name</label>
+                            <input type="text" class="form-control" id="name1" placeholder="" value=""
+                                required>
+                        </div>
+                        <div class="col-md-6 mb-3" id="lastDiv">
+                            <label for="last1">Last name</label>
+                            <input type="text" class="form-control" id="last1" placeholder="" value=""
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3" id="cityDiv">
+                            <label for="city1">City</label>
+                            <input type="text" class="form-control" id="city1" placeholder="City" required>
+                        </div>
+                        <div class="col-md-3 mb-3" id="stateDiv">
+                            <label for="state1">State</label>
+                            <select class="custom-select" id="state1" value="0" >
+                                <option value="0">Pick a state</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3" id="postalDiv">
+                            <label for="postal1">Postal Code</label>
+                            <input type="text" class="form-control" id="postal1" placeholder="" required>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3" id="tarjetaDiv">
+                            <label for="tarjetas">We accept:</label>
+                            <div class="form-row col-6 bg-secondary  border rounded p-2" id="tarjetas">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value=false>
+                                    <label class="form-check-label fab fa-cc-mastercard" for="inlineRadio1"></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value=false>
+                                    <label class="form-check-label fab fa-cc-visa" for="inlineRadio2"></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value=false>
+                                    <label class="form-check-label fab fa-cc-diners-club" for="inlineRadio3"></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value=false>
+                                    <label class="form-check-label fab fa-cc-amex" for="inlineRadio4"></label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="message1">Message</label>
+                            <textarea class="form-control" id="message1" rows="3"></textarea>
+                            <h6>
+                                <small class="text-muted">Add any notes here.</small>
+                            </h6>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-11 bg-light m-auto border rounded-bottom">
+                <a class="btn btn-primary mb-3  mt-3 float-right" type="submit"  href="https://www.google.co.cr/" id="ok">Send</a>
+               
+                <button class="btn btn-secondary mb-3 mr-2 mt-3 float-right" type="submit" id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
